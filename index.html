@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livescore</title>
+    <title>Volleyball Live Score</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Livescore</h1>
-        <div id="team1Name"></div>
-                <div id="team1Score"></div>
-        <div id="team2Name"></div>
-        <div id="team2Score"></div>
-                <div id="status"></div>
+    <div class="connection-status" id="connectionStatus">
+        <span id="connectionText">Verbinde...</span>
+        <div class="loading" id="connectionLoader"></div>
+    </div>
 
+    <div class="container">
+        <h1>🏐 VOLLEYBALL LIVE SCORE 🏐</h1>
+        
+        <div class="score-container">
+            <div class="team">
+                <div class="team-name" id="team1Name">Team 1</div>
+                <div class="team-score" id="team1Score">0</div>
+            </div>
+            
+            <div class="vs">VS</div>
+            
+            <div class="team">
+                <div class="team-name" id="team2Name">Team 2</div>
+                <div class="team-score" id="team2Score">0</div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
