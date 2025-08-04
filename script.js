@@ -155,11 +155,11 @@ function createScoreParticles(element) {
         particle.style.top = centerY + 'px';
         particle.style.width = '8px';
         particle.style.height = '8px';
-        particle.style.background = '#ffd700';
+        particle.style.background = '#00ffff';
         particle.style.borderRadius = '50%';
         particle.style.pointerEvents = 'none';
         particle.style.zIndex = '1000';
-        particle.style.boxShadow = '0 0 10px #ffd700';
+        particle.style.boxShadow = '0 0 10px #00ffff';
         
         document.body.appendChild(particle);
         
@@ -199,14 +199,14 @@ function createSideEffect(element, isIncrease) {
     sideEffect.style.width = '100px';
     sideEffect.style.height = '100px';
     sideEffect.style.background = isIncrease ? 
-        'radial-gradient(circle, #2ed573 0%, #7bed9f 50%, transparent 100%)' :
-        'radial-gradient(circle, #ff4757 0%, #ff6b7a 50%, transparent 100%)';
+        'radial-gradient(circle, #00d4ff 0%, #00ffff 50%, transparent 100%)' :
+        'radial-gradient(circle, #0066cc 0%, #0099cc 50%, transparent 100%)';
     sideEffect.style.borderRadius = '50%';
     sideEffect.style.pointerEvents = 'none';
     sideEffect.style.zIndex = '1000';
     sideEffect.style.boxShadow = isIncrease ? 
-        '0 0 30px rgba(46, 213, 115, 0.8)' :
-        '0 0 30px rgba(255, 71, 87, 0.8)';
+        '0 0 30px rgba(0, 212, 255, 0.8)' :
+        '0 0 30px rgba(0, 102, 204, 0.8)';
     
     document.body.appendChild(sideEffect);
     
@@ -258,7 +258,7 @@ function createDirectionalArrow(element, isIncrease, side) {
     arrow.style.top = centerY + 'px';
     arrow.style.width = '60px';
     arrow.style.height = '60px';
-    arrow.style.background = isIncrease ? '#2ed573' : '#ff4757';
+    arrow.style.background = isIncrease ? '#00d4ff' : '#0066cc';
     arrow.style.borderRadius = '50%';
     arrow.style.pointerEvents = 'none';
     arrow.style.zIndex = '1001';
@@ -269,8 +269,8 @@ function createDirectionalArrow(element, isIncrease, side) {
     arrow.style.color = 'white';
     arrow.style.fontWeight = 'bold';
     arrow.style.boxShadow = isIncrease ? 
-        '0 0 20px rgba(46, 213, 115, 0.8)' :
-        '0 0 20px rgba(255, 71, 87, 0.8)';
+        '0 0 20px rgba(0, 212, 255, 0.8)' :
+        '0 0 20px rgba(0, 102, 204, 0.8)';
     
     // Add arrow symbol
     arrow.innerHTML = isIncrease ? '↗' : '↘';
