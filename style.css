@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #00d4ff 0%, #0099cc 50%, #0066cc 100%);
+    background: linear-gradient(135deg, #004d4d 0%, #003333 50%, #002222 100%);
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -37,7 +37,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 77, 77, 0.2), transparent);
     animation: shimmer 4s infinite;
 }
 
@@ -55,6 +55,9 @@ h1 {
     text-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     letter-spacing: 3px;
     position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 h1::after {
@@ -135,8 +138,8 @@ h1::after {
 .team-score.updated {
     animation: scoreUpdate 0.8s ease-out;
     transform: scale(1.3);
-    color: #00ffff;
-    text-shadow: 0 0 40px rgba(0, 255, 255, 0.9);
+    color: #00cccc;
+    text-shadow: 0 0 40px rgba(0, 204, 204, 0.9);
     font-size: 16rem;
 }
 
@@ -200,18 +203,18 @@ h1::after {
 }
 
 .status.live .status-icon {
-    background: #00d4ff;
-    box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+    background: #00cccc;
+    box-shadow: 0 0 30px rgba(0, 204, 204, 0.8);
 }
 
 .status.paused .status-icon {
-    background: #0099cc;
-    box-shadow: 0 0 30px rgba(0, 153, 204, 0.8);
+    background: #008080;
+    box-shadow: 0 0 30px rgba(0, 128, 128, 0.8);
 }
 
 .status.finished .status-icon {
-    background: #0066cc;
-    box-shadow: 0 0 30px rgba(0, 102, 204, 0.8);
+    background: #004d4d;
+    box-shadow: 0 0 30px rgba(0, 77, 77, 0.8);
 }
 
 @keyframes pulse {
@@ -235,13 +238,13 @@ h1::after {
 }
 
 .connection-status.connected {
-    background: rgba(0, 212, 255, 0.9);
-    border-color: rgba(0, 212, 255, 0.5);
+    background: rgba(0, 204, 204, 0.9);
+    border-color: rgba(0, 204, 204, 0.5);
 }
 
 .connection-status.disconnected {
-    background: rgba(0, 102, 204, 0.9);
-    border-color: rgba(0, 102, 204, 0.5);
+    background: rgba(0, 77, 77, 0.9);
+    border-color: rgba(0, 77, 77, 0.5);
 }
 
 /* Responsive Design */
@@ -252,7 +255,7 @@ h1::after {
     }
     
     h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     
     .team-score {
@@ -278,7 +281,7 @@ h1::after {
     }
     
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .team-score {
@@ -322,7 +325,7 @@ h1::after {
     }
     
     h1 {
-        font-size: 2.5rem;
+        font-size: 1rem;
     }
 }
 
