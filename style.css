@@ -4,30 +4,39 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 body {
     background: linear-gradient(135deg, #004d4d 0%, #003333 50%, #002222 100%);
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(30px);
+    /* background: rgba(255, 255, 255, 0.15); */
+    /* backdrop-filter: blur(30px); */
     border-radius: 40px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* border: 2px solid rgba(255, 255, 255, 0.3); */
     padding: 60px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
-    max-width: 1000px;
+    /* box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2); */
+    max-width: 1600px;
     width: 100%;
     text-align: center;
     position: relative;
     overflow: hidden;
+    margin: auto 0;
 }
 
 .container::before {
@@ -102,14 +111,13 @@ h1::after {
 }
 
 .team-name {
-    font-size: 2.5rem;
+    font-size: 6rem;
     font-weight: 700;
     color: white;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     text-align: center;
     line-height: 1.2;
-    /* Ensure consistent height for team names */
     min-height: 3rem;
     display: flex;
     align-items: center;
@@ -119,7 +127,7 @@ h1::after {
 }
 
 .team-score {
-    font-size: 14rem;
+    font-size: 22rem;
     font-weight: 900;
     color: #fff;
     text-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
@@ -128,10 +136,8 @@ h1::after {
     min-width: 220px;
     text-align: center;
     line-height: 0.8;
-    /* Ensure scores are always aligned */
     margin-top: auto;
     flex-shrink: 0;
-    /* Make it the dominant element */
     z-index: 10;
 }
 
@@ -250,6 +256,7 @@ h1::after {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .container {
+        max-width: 98vw;
         padding: 40px;
         margin: 10px;
     }
@@ -259,11 +266,11 @@ h1::after {
     }
     
     .team-score {
-        font-size: 11rem;
+        font-size: 16rem;
     }
     
     .team-name {
-        font-size: 2rem;
+        font-size: 4rem;
     }
     
     .vs {
@@ -285,11 +292,11 @@ h1::after {
     }
     
     .team-score {
-        font-size: 8rem;
+        font-size: 10rem;
     }
     
     .team-name {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
     }
     
     .vs {
@@ -313,6 +320,10 @@ h1::after {
     
     .team-score {
         font-size: 6rem;
+    }
+    
+    .team-name {
+        font-size: 2rem;
     }
     
     .vs {
